@@ -161,56 +161,6 @@ line-height: normal;
 
 
 
-/*Accordion Style*/
-#accordion{
-    display: flex;
-    width: 338px;
-    padding: 16px 14px 16px 14px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    border-radius: 4px;
-    border-left: 10px solid #3A53A4;
-    background: #FFF;
-}
-
-#accordion-title-control{
-    width:330px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    flex: 1 0 0;
-
-    cursor:pointer;
-}
-
-#accordion-title{
-    flex: 1 0 0;
-    color: #3A53A4;
-    font-family: "Open Sans";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
-
-#accordion-title-control i{
-    color:#3A53A4;
-}
-
-
-#accordion-detail{
-    display:none;
-    align-self: stretch;
-    color: #000;
-    font-family: "Open Sans";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    }
-
-
 /*Previewer Style*/
 
 h1{
