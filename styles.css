@@ -80,7 +80,7 @@ line-height: normal;
 
 #editor, #previewer{
     display: flex;
-    height: 500px;
+    height: 40vw;
     min-width: 400px;
     flex-direction: column;
     align-items: flex-start;
@@ -130,23 +130,26 @@ line-height: normal;
   border: 2px solid #3A53A4;
 }
 
-textarea, #previewContent{
-  display: grid;
+#editorContent, #previewContent{
+    border: none;
+  display: flex;
+  flex-direction: column;
+  
+  gap: 20px;
   padding: 16px;
-  gap: 0px;
-  /*align-items: flex-start;*/
-  /*flex: 1 0 0;*/
+
+
   align-self: stretch;
   border-radius: 0px 0px 10px 10px;
   background: #FFF;
-  height:50vh;
+  height:100%;
   width:calc(100% - 34px); /*to be fixed*/
   resize: none;
-  border: none;
+  
   overflow: auto;
 }
 
-textarea:focus { 
+#editorContent:focus { 
   outline: none; /* Remove the default focus outline (optional) */
 }
 
@@ -253,6 +256,7 @@ li{
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
+  margin-left: 16px;
 }
 
 blockquote {
