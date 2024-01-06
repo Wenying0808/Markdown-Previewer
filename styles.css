@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+*{
+margin:0;
+padding:0;
+}
+
+body{
+  background-color:#E9E9E9;
+  font-family: "Open Sans", Sans-serif;;
+}
+
+#appName{
+display: flex;
+padding: 40px 20px;
+
+justify-content: center;
+align-items: center;
+gap: 10px;
+align-self: stretch;
+
+background: #202B6B;
+
+color: #768BCE;
+font-size: 40px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+
+}
+
+#guide-editor-previewer{
+    display: flex;
+    padding: 60px;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 30px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+#guide{
+    display: flex;
+    padding: 20px 16px;
+
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+
+    border-radius: 10px;
+    background: #D9DFF2;
+}
+
+#guide-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+
+    color: #3A53A4;
+    text-align: center;
+
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#wrapper{
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 20px 20px;
+    
+    flex: 1 0 0;
+    flex-wrap: wrap;
+
+}
+
+#editor, #previewer{
+    display: flex;
+    height: 500px;
+    min-width: 400px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.20);
+
+    border-radius: 10px;
+    background:white;
+}
+
+
+#editor-toolbar, #previewer-toolbar{
+  display: flex;
+  padding: 10px 16px;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+  border-radius: 10px 10px 0px 0px;
+  background:  #3A53A4;
+}
+
+#previewer-toolbar{
+    background: #768BCE;
+}
+
+
+#editor-toolbar a, #previewer-toolbar a{
+  color: #FFF;
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+#editor-toolbar i, #previewer-toolbar i{
+  color: #FFF;
+}
+
+#logoAndLabel{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#editorContent{
+  border: 2px solid #3A53A4;
+}
+
+textarea, #previewContent{
+  display: grid;
+  padding: 16px;
+  gap: 0px;
+  /*align-items: flex-start;*/
+  /*flex: 1 0 0;*/
+  align-self: stretch;
+  border-radius: 0px 0px 10px 10px;
+  background: #FFF;
+  height:50vh;
+  width:calc(100% - 34px); /*to be fixed*/
+  resize: none;
+  border: none;
+  overflow: auto;
+}
+
+textarea:focus { 
+  outline: none; /* Remove the default focus outline (optional) */
+}
+
+
+
+#editor .fa-arrows-alt:hover, #previewer .fa-arrows-alt:hover{
+  color:#768BCE;
+}
+
+
+
+/*Accordion Style*/
+#accordion{
+    display: flex;
+    width: 338px;
+    padding: 16px 14px 16px 14px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 4px;
+    border-left: 10px solid #3A53A4;
+    background: #FFF;
+}
+
+#accordion-title-control{
+    width:330px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+
+    cursor:pointer;
+}
+
+#accordion-title{
+    flex: 1 0 0;
+    color: #3A53A4;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#accordion-title-control i{
+    color:#3A53A4;
+}
+
+
+#accordion-detail{
+    display:none;
+    align-self: stretch;
+    color: #000;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    }
+
+
+/*Previewer Style*/
+
+h1{
+  color: #202B6B;
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+h2{
+  color: #221F20;
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+h3{
+  color: #404040;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+p{
+  color: #000000;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+li{
+  color: #000000;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+blockquote {
+  margin: 0 0 0 10px;
+  padding: 10px; 
+  background-color: #DFF3FF; 
+  border-left: 4px solid #44C4D8; 
+  color: #221F20; 
+  font-style: normal; 
+  font-weight: 500;
+}
+/*Style code markdown*/
+pre {
+  margin: 10px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  min-height: 50px;
+  overflow: auto; /* Enable scrolling for large code blocks */
+}
+code {
+  color: #333;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+}

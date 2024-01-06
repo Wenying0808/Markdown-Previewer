@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <!--style the code block-->
+        <link rel="stylesheet" href="prism.css">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        
+        <!-- Include a Markdown-to-HTML library, like marked -->
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.0.3/marked.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+
+        <!-- My FontAwesome Icon Kit -->
+        <script src="https://kit.fontawesome.com/d606f8987f.js" crossorigin="anonymous"></script>
+
+        <title>Markdown Preview</title>
+    </head>
+    <body>
+        <div id="appName">Markdown Preview</div>
+        <div id="guide-editor-previewer">
+            
+            <div id="guide">
+                <div id="guide-title">Markdown Guide</div>
+                <div id="accordion">
+                    <div id="accordion-title-control" onClick="toggleAnswer(this)">
+                        <div id="accordion-title">How to create Headings?</div>
+                        <i class="fa-solid fa-plus" ></i>
+                    </div>
+                    <div id="accordion-detail">
+                        To create a heading, add number signs (#) in front of a word or phrase. The number of number signs you use should correspond to the heading level.
+                        <br>
+                        <br># Heading level 1
+                        <br>## Heading level 2
+                        <br>### Heading level 3
+                    </div>
+                </div>
+                <div id="accordion">
+                    <div id="accordion-title-control" onClick="toggleAnswer(this)">
+                        <div id="accordion-title">How to create Paragraph?</div>
+                        <i class="fa-solid fa-plus" ></i>
+                    </div>
+                    <div id="accordion-detail">
+                        To create paragraphs, use a blank line to separate one or more lines of text.
+                    </div>
+                </div>
+                <div id="accordion">
+                    <div id="accordion-title-control" onClick="toggleAnswer(this)">
+                        <div id="accordion-title">How to create Emphasis?</div>
+                        <i class="fa-solid fa-plus" ></i>
+                    </div>
+                    <div id="accordion-detail">
+                        To bold text, add two asterisks (**) or underscores (__) before and after a word or phrase.
+                        <br>
+                        <br>**bold text**
+                        <br>
+                        <br>To italicize text, add one asterisk (*) or underscore(_)  before and after a word or phrase. 
+                        <br>
+                        <br>*italicized text*
+                    </div>
+                </div>
+                <div id="accordion">
+                    <div id="accordion-title-control" onClick="toggleAnswer(this)">
+                        <div id="accordion-title">How to create Blockquotes?</div>
+                        <i class="fa-solid fa-plus" ></i>
+                    </div>
+                    <div id="accordion-detail">
+                        To create a blockquote, add a > in front of a paragraph.
+                        <br>
+                        <br>> This is blockquote.
+                    </div>
+                </div>
+                <div id="accordion">
+                    <div id="accordion-title-control" onClick="toggleAnswer(this)">
+                        <div id="accordion-title">How to create Code?</div>
+                        <i class="fa-solid fa-plus" ></i>
+                    </div>
+                    <div id="accordion-detail">
+                        To denote a word or phrase as code, enclose it in backticks (`). If the word or phrase you want to denote as code includes one or more backticks, you can escape it by enclosing the word or phrase in double backticks (``).
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="wrapper">
+                <div id=editor>
+                    <div id=editor-toolbar>
+                        <div id=logoAndLabel>
+                            <a>Editor</a>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </div>
+                    </div>
+                    <textarea id=editorContent placeholder="Create markdown here..."></textarea>
+                </div>
+                <div id=previewer>
+                    <div id=previewer-toolbar>
+                        <div id=logoAndLabel>
+                            <a>Previewer</a>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div id=previewContent></div>
+                </div>
+            </div>
+        </div>
+        
+
+        <script src="script.js"></script>
+        <script src="accordion.js"></script>
+    </body>
+</html>
